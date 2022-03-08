@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200&display=swap');
+/*
+font-family: 'Karla', sans-serif;
+Farbe: #323A45 / #848484
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Karla', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: unset;
+    text-transform: capitalize;
+}
+a:hover{
+    opacity: .5;
+}
+h1{
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-left: 5%;
+}
+h2{
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+/* ++++++ Header +++++++++++ */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom:5%;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    margin-right: 5.3%;
+}
+ul li{
+    list-style: none;
+    font-size: .9rem;
+}
+/* ++++++ main + Grid Container ++++++ */
+/* main{
+  width: 90%;
+  margin: 0 auto;
+} */
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 15px;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+figcaption{
+  font-size: .8rem;
+  margin-bottom: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.caption{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.company{
+  color: #848484;
+  margin-bottom: 2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img{
+  width: 100%;
+  margin-bottom: 2%;
+}
+.grid-lg{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+  width: 90%;
+  margin: 0 auto;
+}
+/* +++++++ contact section +++++++ */
+.grid-2{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 15px;
+  margin-top: 6%;
+  justify-items: center;
+  align-content: center;
+  
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+article p{
+  font-weight: 400;
+  font-size: .9rem;
+  margin-bottom: 5px;
+  line-height: 1.8;
+}
+article a{
+  font-weight: 500;
+}
+span{
+  font-weight: 700;
+}
+.italic{
+  font-style: italic;
+}
+footer{
+  padding: 30px 0;
+  color: #848484;
+  text-transform: capitalize;
+  font-size: .9rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.footer-nav-list{
+  color:black ;
+  margin-left: 10%;
+}
+footer span{
+  font-weight: bold;
 }
